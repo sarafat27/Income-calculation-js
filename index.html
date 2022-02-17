@@ -28,40 +28,41 @@
                 <h6 class="text-center mt-3">Income</h6>
                 <div class="text-center">
                     <p class="d-inline">Income:</p>
-                    <input type="text">
+                    <input id="income-input" type="text">
                 </div>
                 <h6 class="text-center mt-3">Expenses</h6>
                 <div class="text-center my-3">
                     <p class="d-inline">Food:</p>
-                    <input type="text">
+                    <input id="food-input" type="text">
                 </div>
                 <div class="text-center">
                     <p class="d-inline">Rent:</p>
-                    <input type="text">
+                    <input id="rent-input" type="text">
                 </div>
                 <div class="text-center my-3">
                     <p class="d-inline">Clothes:</p>
-                    <input type="text">
+                    <input id="clothes-input" type="text">
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-dark">Calculate</button>
+                    <button id="calculate-btn" class="btn btn-dark">Calculate</button>
                 </div>
-                <h6 class="text-center mt-3">Total Expenses: </h6>
-                <h6 class="text-center my-3">Balance: </h6>
+                <h6 class="text-center mt-3">Total Expenses: <span id="total-expenses">00</span></h6>
+                <h6 class="text-center my-3">Balance: <span>00</span></h6>
                 <div class="text-center">
                     <p class="d-inline">save:</p>
-                    <input type="text" id="name" size="4">
+                    <input id="save-input" type="text" id="name" size="4">
                     <p class="d-inline mx-3">%</p>
                     <button class="btn btn-dark">Save</button>
                 </div>
-                <h6 class="text-center my-3">Saving Amount: </h6>
-                <h6 class="text-center">Remaining Balance: </h6>
+                <h6 class="text-center my-3">Saving Amount: <span>00</span></h6>
+                <h6 class="text-center">Remaining Balance: <span>00</span></h6>
 
 
             </div>
         </div>
     </main>
-
+    <!-- js file link -->
+    <script src="js/app.js"></script>
 </body>
 
 </html>
