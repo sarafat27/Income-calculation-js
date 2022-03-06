@@ -41,15 +41,18 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 //click handler for save button
 document.getElementById('save-button').addEventListener('click', function () {
-    //showing saving amount
+    //calculating saving amount
     const savepercent = getInputValue('save');
     const incomeValue = getInputValue('income');
     const savingAmount = incomeValue * (savepercent / 100);
     getResultField('saving-amount').innerText = savingAmount;
-    //showing remaining balance
+    //showing saving amount & remaining balance
     const balance = getResultField('total-balance').innerText;
     if (savingAmount > balance) {
         alert('you can not save more than your balance');
+    }
+    else if (isNaN(savingAmount)) {
+        alert("Please give a valid number");
     }
     else if (savingAmount < 0) {
         alert('save percentage can not be negative');
@@ -58,5 +61,5 @@ document.getElementById('save-button').addEventListener('click', function () {
         const remainingBalance = balance - savingAmount;
         getResultField('remaining-balance').innerText = remainingBalance;
     }
-})
+});
 
